@@ -1,11 +1,13 @@
-This repository is no longer maintained, as Gym is not longer maintained and all future maintenance of it will occur in the replacing [Gymnasium](https://github.com/Farama-Foundation/Gymnasium) library. You can contribute Gymnasium examples to the Gymnasium repository and docs directly if you would like to. If you'd like to learn more about the transition from Gym to Gymnasium, you can read more about it [here](https://farama.org/Announcing-The-Farama-Foundation).
+Updated to work with Gymnasium
 
-# Gym Examples
-Some simple examples of Gym environments and wrappers.
-For some explanations of these examples, see the [Gym documentation](https://gymnasium.farama.org).
+# Gymnasium Environment Example
+Simple GriddWorld environment and wrappers example.
+
+[Tutorial](https://www.gymlibrary.dev/content/environment_creation)
 
 ### Environments
 This repository hosts the examples that are shown [on the environment creation documentation](https://gymnasium.farama.org/tutorials/environment_creation/).
+
 - `GridWorldEnv`: Simplistic implementation of gridworld environment
 
 ### Wrappers
@@ -15,10 +17,19 @@ This repository hosts the examples that are shown [on wrapper documentation](htt
 - `RelativePosition`: An `ObservationWrapper` that computes the relative position between an agent and a target
 - `ReacherRewardWrapper`: Allow us to weight the reward terms for the reacher environment
 
-### Contributing
-If you would like to contribute, follow these steps:
-- Fork this repository
-- Clone your fork
-- Set up pre-commit via `pre-commit install`
 
-PRs may require accompanying PRs in [the documentation repo](https://github.com/Farama-Foundation/Gymnasium/tree/main/docs).
+Doumentation [the documentation repo](https://github.com/Farama-Foundation/Gymnasium/blob/main/docs/tutorials/gymnasium_basics/environment_creation.py)
+
+
+# Run
+```console
+git clone https://github.com/javier-acosta-m/gymnasium-examples.git
+cd gym-examples
+python -m venv env
+Linux:
+source env/bin/activate
+Windows:
+env\Scripts\activate
+pip install -e .
+python run_test.py
+```
