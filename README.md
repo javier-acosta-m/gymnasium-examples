@@ -31,5 +31,5 @@ source env/bin/activate
 Windows:
 env\Scripts\activate
 pip install -e .
-python run_test.py
+python test_env.py
 ```
